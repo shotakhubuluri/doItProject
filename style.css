@@ -9,6 +9,9 @@
   --mainColor: #fbb615;
   --black: #000000;
   --white: #ffffff;
+
+  --font-primary: "Oswald", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
 }
 
 main {
@@ -25,7 +28,7 @@ main {
   margin-bottom: 80px;
   flex-wrap: wrap;
   grid-template-areas: "pirveli meore meore" "mesame meotxe mexute";
-  font-family: "Oswald", sans-serif !important;
+  font-family: var(--font-primary) !important;
 }
 
 .sec1 .card {
@@ -52,7 +55,7 @@ main {
 }
 
 .c1 .bottom-pts p {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 14px;
   margin-top: 5px;
 }
@@ -65,7 +68,7 @@ main {
   margin-top: 14px;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 400;
   transition: 0.3s;
 }
@@ -102,7 +105,7 @@ main {
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-primary);
   font-weight: bold;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
   margin-left: 25px;
@@ -129,7 +132,7 @@ main {
 .card .upper-pt {
   color: var(--mainColor);
   width: 210px;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-primary);
 }
 
 .shop {
@@ -148,7 +151,7 @@ main {
 
   display: flex;
   justify-content: space-between;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-primary);
 }
 
 .shop-title h1 {
@@ -186,13 +189,13 @@ main {
 }
 
 .shop .cards .trend .card-title p {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 15px;
   margin: 25px 0px 0px 25px;
 }
 
 .shop .cards .trend .card-title h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-primary);
   font-size: 23px;
   margin-left: 25px;
 }
@@ -214,7 +217,7 @@ main {
   height: 50px;
   margin-left: 20px;
   /* border: 1px solid black; */
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-primary);
 }
 
 .category .cards {
@@ -261,6 +264,17 @@ main {
   background-size: cover;
 }
 
+.special .back1 {
+  background-image: url("https://static.wixstatic.com/media/11062b_b521ecf362c4454b8fd430954b6d503d~mv2.jpg/v1/fill/w_587,h_487,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_b521ecf362c4454b8fd430954b6d503d~mv2.jpg");
+  background-size: cover;
+}
+
+.special .back2 {
+  background-image: url("https://static.wixstatic.com/media/11062b_3ccd06c1f39441ba9b93a2a2dc8674b8~mv2.jpeg/v1/fill/w_432,h_487,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_3ccd06c1f39441ba9b93a2a2dc8674b8~mv2.jpeg") !important;
+  background-size: cover;
+  background-position: center;
+}
+
 .special .front {
   display: flex;
   flex-direction: column;
@@ -269,7 +283,7 @@ main {
 
 .special .front h1 {
   color: var(--mainColor);
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-primary);
   margin: 25px;
 }
 
@@ -281,11 +295,11 @@ main {
 }
 
 .special .front .mid-txt h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-primary);
 }
 
 .special .front .mid-txt p {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-secondary);
   margin-top: 10px;
 }
 .special .front .mid-txt button {
@@ -295,7 +309,7 @@ main {
   padding: 5px;
   cursor: pointer;
   font-size: 16px;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-primary);
   font-weight: 400;
   transition: 0.5s;
   margin-top: 30px;
@@ -311,7 +325,7 @@ main {
   width: 95.4%;
   margin-left: 40px;
   margin-bottom: 80px;
-  height: 610px;
+  height: 680px;
   flex-wrap: wrap;
   /* border: 1px solid black; */
 }
@@ -319,12 +333,77 @@ main {
 .posts .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 550px;
+  grid-auto-rows: 620px;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .posts .cards .card {
   border: 1px solid black;
+}
+
+.posts .cards .card .elements {
+  margin: 25px;
+}
+
+.posts .cards .card .banner img {
+  width: 100%;
+}
+
+.posts .cards .card .elements .admin {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: var(--font-secondary);
+  font-size: 12px;
+  gap: 5px;
+}
+
+.posts .cards .card .elements .main-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.posts .cards .card .elements .main-txt h3 {
+  font-family: var(--font-primary);
+  font-size: 22px;
+}
+
+.posts .cards .card .elements .main-txt p {
+  font-family: var(--font-secondary);
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.posts .cards .card .elements hr {
+  margin-top: 15px;
+}
+
+.posts .cards .card .elements .stats {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.posts .cards .card .elements .stats .view {
+  display: flex;
+  font-size: 13px;
+  gap: 5px;
+}
+
+.posts .cards .card .elements .stats .view .fa-eye {
+  font-size: 15px;
+}
+
+.posts .cards .card .elements .stats .comment {
+  display: flex;
+  font-size: 13px;
+  gap: 5px;
+}
+.posts .cards .card .elements .stats .comment .fa-message {
+  font-size: 15px;
 }
 
 .brands {
@@ -340,7 +419,7 @@ main {
   width: 100%;
   border: 1px solid black;
   height: 60px;
-  font-family: "Oswald", sans-serif;
+  font-family: var(--font-primary);
 }
 
 .brands .logos {
@@ -351,6 +430,8 @@ main {
 
 .brands .logos .logo {
   border: 1px solid black;
+
+  text-align: center;
 }
 
 .delivery {
