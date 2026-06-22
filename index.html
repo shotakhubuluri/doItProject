@@ -17,6 +17,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -25,7 +27,7 @@
       <div class="top-bar">
         <div class="top-left">
           <div class="abt">
-            <a href="#">About Us</a>
+            <a href="aboutus.html">About Us</a>
           </div>
           <div class="ship">
             <a href="#">Shipping & Returns</a>
@@ -38,14 +40,25 @@
           <button>HELP CENTER</button>
         </div>
       </div>
+
       <div class="info">
         <div class="search">
-          <div class="logo">
-            <h1>BRICS</h1>
+          <!-- Burger icon -->
+          <div class="burger" id="burgerBtn">
+            <i class="fa-solid fa-bars"></i>
           </div>
-          <button>
-            <i class="fa-brands fa-sistrix"></i> What are you looking for today?
-          </button>
+
+          <div class="logo">
+            <a href="#">
+              <h1>BRICS</h1>
+            </a>
+          </div>
+          <a href="search.html">
+            <button>
+              <i class="fa-brands fa-sistrix"></i> What are you looking for
+              today?
+            </button>
+          </a>
         </div>
       </div>
 
@@ -70,6 +83,18 @@
             <i class="fa-solid fa-bag-shopping"></i>
           </div>
         </div>
+      </div>
+
+      <!-- Mobile burger menu (overlay) -->
+      <div class="burger-menu" id="burgerMenu">
+        <ul class="burger-links">
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Shop All</a></li>
+          <li><a href="#">Deals & Offers</a></li>
+          <li><a href="#">DIY Projects & Ideas</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
       </div>
     </header>
 
@@ -293,7 +318,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_3b994bf30b4844dda3f862aadd388ae2~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_3b994bf30b4844dda3f862aadd388ae2~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -305,7 +330,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_ee850f67b0514e718ff059789415ee4c~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_ee850f67b0514e718ff059789415ee4c~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -317,7 +342,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_dec47c7997b44aaea42dc1aed1a66888~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_dec47c7997b44aaea42dc1aed1a66888~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -329,7 +354,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_69d682152cde4ee1abf58292a7c31e8f~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_69d682152cde4ee1abf58292a7c31e8f~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -341,7 +366,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_5b7fb0385ff44dd9b7d0b26e7d702e3d~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_5b7fb0385ff44dd9b7d0b26e7d702e3d~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -363,7 +388,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_4ceb580b74d44e988f7bdc47694c4c81~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_4ceb580b74d44e988f7bdc47694c4c81~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -375,7 +400,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_0e75e8b86a0b47528848b1243c4577e4~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_0e75e8b86a0b47528848b1243c4577e4~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -387,7 +412,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_f81abcbb2cdd4632806dd9ece12b9fc2~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f81abcbb2cdd4632806dd9ece12b9fc2~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -399,7 +424,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_947cee02b09040349df5e4efa0378475~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_947cee02b09040349df5e4efa0378475~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -411,7 +436,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_a7126fe8beae43f285538f3e3bed385b~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_a7126fe8beae43f285538f3e3bed385b~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -426,7 +451,7 @@
       <nav class="posts">
         <div class="shop-title">
           <h1>DIY PROJECTS & IDEAS</h1>
-          <button>VIEW ALL</button>
+          <button>ALL POSTS</button>
         </div>
 
         <div class="cards">
@@ -644,7 +669,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_f88511aec60e472b8b94a51873ee5c14~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f88511aec60e472b8b94a51873ee5c14~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -656,7 +681,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_a535fc77fd0d4238b130a8bb820c50a7~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_a535fc77fd0d4238b130a8bb820c50a7~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -668,7 +693,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_40117340c717476e8cd5e13016fda221~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_40117340c717476e8cd5e13016fda221~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -680,7 +705,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_a9cfd874c9fe432aa7b4a7a74cd22e20~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_a9cfd874c9fe432aa7b4a7a74cd22e20~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -692,7 +717,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_42f0a0765bf344989141ad227873e07a~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_42f0a0765bf344989141ad227873e07a~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -714,7 +739,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_17d22cd36f5b44cd8d1207f4ac389bd8~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_17d22cd36f5b44cd8d1207f4ac389bd8~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -726,7 +751,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_daf14530935e42c68d97562c6d33abc9~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_daf14530935e42c68d97562c6d33abc9~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -738,7 +763,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_307ad27bdef34af284b9b2024a0e1927~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_307ad27bdef34af284b9b2024a0e1927~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -750,7 +775,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_d0ca6ec8091242fa819a3357283d8f1d~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_d0ca6ec8091242fa819a3357283d8f1d~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -762,7 +787,7 @@
           <div class="card trend">
             <div class="img">
               <img
-                src="https://static.wixstatic.com/media/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_233,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2512b24ee3094d2db3dc5e59a51b07c0~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
+                src="https://static.wixstatic.com/media/c837a6_d38b1d9aaf784153b2754b9ed0a26d1c~mv2.jpg/v1/fit/w_1502,h_2000,q_90/file.jpg/v1/fill/w_194,h_258,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_d38b1d9aaf784153b2754b9ed0a26d1c~mv2_jpg_v1_fit_w_1502%2Ch_2000%2Cq_90_file.jpg"
                 alt=""
               />
             </div>
@@ -779,25 +804,211 @@
           <h1>SAFER, EASIER SHOPPING</h1>
         </div>
         <div class="cards">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+          <div class="card">
+            <div class="main-title">
+              <h1>CURBSIDE PICKUP</h1>
+            </div>
+            <div class="logo">
+              <img src="photos/pickup.png" alt="" />
+            </div>
+            <div class="description">
+              <p>
+                Order online or through our mobile app, and an associate will
+                bring your order directly to your vehicle
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="main-title">
+              <h1>FREE SHIPPING</h1>
+            </div>
+            <div class="logo">
+              <img src="photos/delivery.png" alt="" />
+            </div>
+            <div class="description">
+              <p>Save time and money with free shipping on orders over $45</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="main-title">
+              <h1>ON-THE-GO</h1>
+            </div>
+            <div class="logo">
+              <img src="photos/phone.png" alt="" />
+            </div>
+            <div class="description">
+              <p>Find what you're looking for with our mobile app</p>
+            </div>
+          </div>
         </div>
       </nav>
 
       <nav class="app">
-        <div class="left"></div>
+        <div class="left">
+          <div class="title">
+            <h1>DOWNLOAD OUR APP</h1>
+            <p>Enjoy a seamless shopping experience anytime, anywhere</p>
+          </div>
+          <div class="download">
+            <a href="#">
+              <img
+                src="https://static.wixstatic.com/media/c837a6_07abc6f920ab485fa7e3089a58bfc328~mv2.png/v1/fill/w_144,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Appstore_2.png"
+                alt=""
+            /></a>
+            <a href="#">
+              <img
+                src="https://static.wixstatic.com/media/c837a6_0ccc5e5e2b3444fca5ed33e294143172~mv2.png/v1/fill/w_161,h_51,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Google%20Play.png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
         <div class="right"></div>
       </nav>
 
-      <nav class="newsletter">
-        <div class="subscribe"></div>
-      </nav>
+      <section class="newsletter-section">
+        <div class="newsletter-card">
+          <div class="newsletter-content">
+            <h2>Subscribe Here For More Deals, Inspirations And DIY Trends</h2>
+
+            <form>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" required />
+              </div>
+
+              <div class="checkbox-group">
+                <input type="checkbox" id="subscribe" required />
+                <label for="subscribe">
+                  Yes, subscribe me to your newsletter. *
+                </label>
+              </div>
+              <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
       <nav class="help-center">
-        <div class="left"></div>
+        <div class="left">
+          <div class="main-txt">
+            <h1>HELP CENTER</h1>
+            <p>Have questions about our services? We're here to help</p>
+            <h2>123-456-7890</h2>
+          </div>
+          <div class="btn">
+            <button>GET HELP</button>
+          </div>
+        </div>
         <div class="right"></div>
       </nav>
     </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h3>DEPARTMENTS</h3>
+          <ul>
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Paint Supplies</a></li>
+            <li><a href="#">Power Tools</a></li>
+            <li><a href="#">Storage & Organization</a></li>
+            <li><a href="#">Building Supplies</a></li>
+            <li><a href="#">Lawn & Gardening</a></li>
+            <li><a href="#">Home & Decor</a></li>
+            <li><a href="#">Lighting & Electrical</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>CUSTOMER<br />SERVICE</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>ABOUT<br />BRICS</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Brands</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>RESOURCES</h3>
+          <ul>
+            <li><a href="#">Deals & Offers</a></li>
+            <li><a href="#">DIY Projects & Ideas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column follow">
+          <h3>FOLLOW</h3>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Pinterest</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Payment Methods</a>
+      </div>
+
+      <div class="footer-payments">
+        <h4>WE ACCEPT THE FOLLOWING PAYING METHODS</h4>
+
+        <div class="payment-icons">
+          <img
+            src="https://static.wixstatic.com/media/84770f_f8d5407f8f5d41f1b46d4f8c40a19910~mv2.jpeg/v1/fill/w_49,h_28,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/full-color-800x450.jpeg"
+            alt="Visa"
+          />
+          <img
+            src="https://static.wixstatic.com/media/c837a6_e68c790f60134649a7f1b2819cbe755f~mv2.png/v1/fill/w_49,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/brand-mastercard%403x.png"
+            alt="Mastercard"
+          />
+          <img
+            src="https://static.wixstatic.com/media/c837a6_c080e1b0e92c4b72a2d5e88f461d41b7~mv2.png/v1/fill/w_50,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/brand-amex%403x.png"
+            alt="American Express"
+          />
+          <img
+            src="https://static.wixstatic.com/media/c837a6_04903c9bfca241679d722d28e1a5a89a~mv2.png/v1/fill/w_50,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/brand-chinaunionpay%403x.png"
+            alt="Discover"
+          />
+          <img
+            src="https://static.wixstatic.com/media/c837a6_00750f2b95a84e7d84421c2b52eacb34~mv2.png/v1/fill/w_49,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/brand-jcb%403x.png"
+            alt="PayPal"
+          />
+
+          <img
+            src="https://static.wixstatic.com/media/c837a6_56cb8f17f4174fc39e6616f58ac64c3c~mv2.png/v1/fill/w_48,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/brand-discover%403x.png"
+            alt=""
+          />
+
+          <img
+            src="https://static.wixstatic.com/media/c837a6_2c269d8bae0d4cb08fe2b73777585781~mv2.png/v1/fill/w_50,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/brand-diners%403x.png"
+            alt=""
+          />
+
+          <img
+            src="https://static.wixstatic.com/media/c837a6_b6924612b43844b99033d561450be82e~mv2.png/v1/fill/w_49,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/brand-paypal%403x.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2035 BY BRICS. Powered and secured by Wix</p>
+      </div>
+    </footer>
   </body>
 </html>

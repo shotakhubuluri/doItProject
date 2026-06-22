@@ -1,0 +1,179 @@
+.search-overlay {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px;
+  /* background: #f4f4f4; */
+}
+
+.search-header {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.search-header input {
+  flex: 1;
+  height: 45px;
+  border: 1px solid #999;
+  padding: 0 15px;
+}
+
+.search-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.product {
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e95a0c;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+}
+
+.product h4 {
+  font-size: 14px;
+  margin: 15px 0 8px;
+  line-height: 1.4;
+}
+
+.price {
+  color: #666;
+}
+
+.price span {
+  text-decoration: line-through;
+  margin-left: 6px;
+}
+
+.blogs {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blog {
+  display: flex;
+  gap: 12px;
+  width: 300px;
+}
+
+.blog img {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.blog h4 {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.blog p {
+  font-size: 13px;
+  color: #555;
+}
+
+.show-results {
+  margin-top: 30px;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  cursor: pointer;
+}
+
+/* =====================
+   Responsive <=500px
+===================== */
+
+@media (max-width: 1024px) {
+  .search-overlay {
+    padding: 30px;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .product img {
+    height: 200px;
+  }
+
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .blog {
+    width: 100%;
+  }
+}
+
+/* =====================
+   Mobile
+===================== */
+
+@media (max-width: 500px) {
+  .search-overlay {
+    padding: 20px;
+  }
+
+  .search-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-header input {
+    width: 100%;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .product {
+    text-align: center;
+  }
+
+  .product img {
+    height: 180px;
+  }
+
+  .blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .blog {
+    width: 100%;
+  }
+
+  .show-results {
+    width: 100%;
+  }
+}
