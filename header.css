@@ -64,7 +64,7 @@ main {
   justify-self: center;
 }
 
-.top-right {
+.top-bar .top-right {
   justify-self: end;
   align-items: center;
   margin-right: 40px;
@@ -270,9 +270,33 @@ main {
 /* ============================
    BREAKPOINT 0: ≤1290px → ბურგერი ჩაირთვება
    ============================ */
-@media (max-width: 1290px) {
+@media (max-width: 1120px) {
+  header {
+    height: 140px;
+  }
+
+  main {
+    margin-top: 140px;
+  }
   .top-left {
     display: none; /* About Us / Shipping & Returns მიდის ბურგერში */
+  }
+  .top-bar .burger {
+    display: flex;
+    position: absolute;
+  }
+
+  .top-bar .burger .fa-bars {
+    font-size: 15px;
+  }
+
+  .top-right {
+    position: absolute;
+  }
+
+  .top-center {
+    position: absolute;
+    /* left: 40px; */
   }
 
   .navbar-left {
@@ -283,11 +307,91 @@ main {
     grid-template-columns: 1fr; /* მარჯვენა მხარეს ერთი ბლოკი */
   }
 
-  .navbar-right {
-    justify-self: end;
+  .info {
+    margin-top: 20px;
   }
 
-  .burger {
-    display: flex;
+  .navbar-right {
+    display: none;
   }
+}
+
+@media (max-width: 600px) {
+  .top-bar {
+    /* grid-template-columns: 1fr; */
+    text-align: center;
+    /* gap: 10px; */
+    padding: 10px;
+    min-height: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 96.4%;
+    margin-left: 10px;
+  }
+
+  .top-left,
+  .top-right {
+    justify-self: center;
+    margin: 0;
+  }
+
+  .top-left {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .info .search {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .info .search .logo {
+    width: 100%;
+  }
+
+  .info .search a {
+    width: 100%;
+  }
+
+  .info .search a button {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .navbar {
+    position: static;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .navbar-left ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navbar-right {
+    justify-content: center;
+  }
+
+  .top-bar .top-right {
+    justify-self: end;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .info {
+    margin-top: -10px;
+    width: 100%;
+  }
+
+  .info .logo {
+    width: 100%;
+  }
+  /* .info .search .logo h1 {
+    
+  } */
 }
