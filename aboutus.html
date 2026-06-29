@@ -19,12 +19,18 @@
     />
 
     <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="aboutus.css" />
+    <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
     <header>
       <div class="top-bar">
+        <div class="burger" id="burgerBtn">
+          <i
+            onclick="hamburgerNav.classList.add('hamburgerShow')"
+            class="fa-solid fa-bars"
+          ></i>
+        </div>
         <div class="top-left">
           <div class="abt">
             <a href="#">About Us</a>
@@ -40,6 +46,32 @@
           <button>HELP CENTER</button>
         </div>
       </div>
+
+      <div id="hamburgerNav" class="hamburgerNav">
+        <button
+          class="close"
+          onclick="hamburgerNav.classList.remove('hamburgerShow')"
+        >
+          <i class="fa-solid fa-angles-left"></i>
+        </button>
+        <div class="cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <ul>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="#">Deals & Offers</a></li>
+          <li><a href="#">DIY Projects & Ideas</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+
+        <a href="login.html">
+          <button class="login">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>Log In</p>
+          </button>
+        </a>
+      </div>
+
       <div class="info">
         <div class="search">
           <div class="logo">
@@ -67,10 +99,12 @@
         </div>
         <div class="navbar-right">
           <div class="login">
-            <button>
-              <i class="fa-solid fa-circle-user"></i>
-              <p>Log In</p>
-            </button>
+            <a href="login.html">
+              <button>
+                <i class="fa-solid fa-circle-user"></i>
+                <p>Log In</p>
+              </button>
+            </a>
           </div>
 
           <div class="cart">

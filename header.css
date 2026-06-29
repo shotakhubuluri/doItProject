@@ -60,6 +60,150 @@ main {
   /* text-decoration: #fbb615; */
 }
 
+.hamburgerNav {
+  width: 350px;
+  max-width: 90%;
+  height: 100vh;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 0.45s ease;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+  box-shadow: 8px 0 30px rgba(0, 0, 0, 0.35);
+}
+
+.hamburgerShow {
+  left: 0;
+}
+
+.hamburgerNav .close {
+  width: 42px;
+  height: 42px;
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hamburgerNav .close i {
+  font-size: 18px;
+}
+
+.hamburgerNav .close:hover {
+  background: var(--mainColor);
+  color: black;
+  border-color: var(--mainColor);
+}
+
+.hamburgerNav .cart {
+  width: 70px;
+  height: 70px;
+  margin: 40px auto;
+  border-radius: 50%;
+  background: black;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hamburgerNav .cart:hover {
+  box-shadow: 0 10px 25px rgba(251, 182, 21, 0.4);
+  background: var(--mainColor);
+  color: black;
+}
+
+.hamburgerNav ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.hamburgerNav ul li {
+  margin-bottom: 12px;
+}
+
+.hamburgerNav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 18px;
+  border-radius: 12px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.hamburgerNav ul li a:hover {
+  background: #fbb615;
+  color: black;
+  padding-left: 28px;
+}
+
+.hamburgerNav ul li a::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 6px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.hamburgerNav ul li a:hover::before {
+  width: 8px;
+}
+
+.hamburgerNav a {
+  text-decoration: none;
+}
+
+.hamburgerNav a .login {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 15px;
+  background: #fbb615;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hamburgerNav .login i {
+  font-size: 20px;
+}
+
+.hamburgerNav .login:hover {
+  background: white;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 255, 255, 0.2);
+}
+
+.hamburgerNav .login:active {
+  transform: scale(0.97);
+}
+
 .top-center {
   justify-self: center;
 }
@@ -194,6 +338,10 @@ main {
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   gap: 5px;
+}
+
+.navbar-right a {
+  text-decoration: none;
 }
 
 .navbar-right button .fa-circle-user {
@@ -339,6 +487,10 @@ main {
     flex-direction: column;
     gap: 8px;
   }
+
+  /* .top-center {
+    margin-bottom: 15px;
+  } */
 
   .info .search {
     flex-direction: column;
